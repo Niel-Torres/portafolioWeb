@@ -1,7 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <title>Niel Torres</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
-    <p> Hi World! </p>
+    <header>
+      <div>
+        <figure>
+          <img src="images/marca-Niels.png" alt="Logo de http://nieltorres.com" />
+        </figure>
+        <nav>
+          <ol>
+            <li>
+              <a href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <a href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <h1>
+        Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
+      </h1>
+      <img src="images/nieltorres.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+    </section>
+    <section id="portafolio">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article>
+        <h3>Videos</h3>
+        <h6>React Native / React</h6>
+        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p>Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+        <div class="mockup-container iphone">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
+              <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
+              <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
+          </svg>
+        </div>    
+      </article>
+    </section>
+    <section id="eventos">
+      <h2>Más sobre mi experiencia</h2>
+      <article>
+        <figure>
+          <img src="images/teletrabajo.png" width="500" />
+        </figure>
+        <h3>Madrid 2020</h3>
+        <p>.</p>
+        <a>Ver</a>
+      </article>
+    </section>
+    <section id="contacto">
+      <form action="/suscription">
+        <h3>¿Creamos algo juntos?</h3>
+        <label for="email">Déjame tu email</label>
+        <input type="text" placeholder="@gmail.com" id="email">  
+        <input type="submit" value="enviar">
+      </form>
+    </section>
+
+    <section>sección contacto</section>
+    <footer>footer</footer>
   </body>
 </html>
