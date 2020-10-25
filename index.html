@@ -4,73 +4,149 @@
     <meta charset="UTF-8" />
     <title>Niel Torres</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <div>
-        <figure>
-          <img src="images/marca-Niels.png" alt="Logo de http://nieltorres.com" />
+    <header class="header">
+      <div class="container">
+        <!-- Logo -->
+        <figure class="logo">
+          <img src="images/marca-Niels.png" height="50" alt="Logo de http://nieltorres.com" />
         </figure>
-        <nav>
+
+        <!-- Nav -->
+        <nav class="menu">  
           <ol>
             <li>
-              <a href="#portafolio">Portafolio</a>
+              <a class="link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a href="#eventos">Experiencia</a>
+              <a class="link" href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a href="#contacto">Trabajemos juntos</a>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
-        </nav>
+        </nav> 
       </div>
     </header>
-    <section>
-      <h1>
-        Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
-      </h1>
-      <img src="images/nieltorres.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
+        </h1>
+        <img class="hero-image" src="images/IMG_8392.png" width="300" height="200" alt="imagen principal del sitio"> 
     </section>
-    <section id="portafolio">
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <article>
-        <h3>Videos</h3>
-        <h6>React Native / React</h6>
-        <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-        <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-        <p>Platzi Video fue el resultado de 3 meses de trabajo
-            para crear la mejor app para enseñar el funcionamiento
-            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-        <div class="mockup-container iphone">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
-              <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
-              <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
-          </svg>
-        </div>    
-      </article>
+      </div>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3>Videos</h3>
+            <h6>React Native / React</h6>
+            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+            <p>Platzi Video fue el resultado de 3 meses de trabajo
+                para crear la mejor app para enseñar el funcionamiento
+                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+          </div>
+          <figure class="project-imageContainer">
+            <div class="mockup-container iphone">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
+                  <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
+                  <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
+              </svg>
+            </div>  
+          </figure>  
+        </article>
+      </div>
     </section>
-    <section id="eventos">
-      <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="images/teletrabajo.png" width="500" />
-        </figure>
-        <h3>Madrid 2020</h3>
-        <p>.</p>
-        <a>Ver</a>
-      </article>
-    </section>
-    <section id="contacto">
-      <form action="/suscription">
-        <h3>¿Creamos algo juntos?</h3>
-        <label for="email">Déjame tu email</label>
-        <input type="text" placeholder="@gmail.com" id="email">  
-        <input type="submit" value="enviar">
-      </form>
+    
+    <div class="container">
+      <h2 class="event-list-title">Más sobre mi experiencia</h2>
+    </div>
+
+    <section id="eventos" class="event-list">
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img src="images/teletrabajo.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf Perú 2018</h3>
+            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          </div>
+        </article>
+
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/teletrabajo.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf Perú 2018</h3>
+            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          </div>
+        </article>
+
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/teletrabajo.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf Perú 2018</h3>
+            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          </div>
+        </article>
+
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/teletrabajo.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">PlatziConf Perú 2018</h3>
+            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+          </div>
+        </article>
+
+      </div>   
     </section>
 
-    <section>sección contacto</section>
-    <footer>footer</footer>
+    <section id="contacto" class="contact">
+      <div class="container">
+
+        <form action="/suscription" class="form-email">
+          <h3>¿Creamos algo juntos?</h3>
+          <label for="email">Déjame tu email</label>
+          <input type="text" placeholder="@gmail.com" id="email">  
+          <input type="submit" value="enviar">
+        </form>
+        <div class="social">
+          <a href="https://twitter.com/ntorrema" class="social-link twitter"></a>
+          <a href="https://facebook.com/on.torres.m" class="social-link facebook"></a>
+          <a href="https://github.com/nieltorres" class="social-link github"></a>
+          <a href="https://www.instagram.com/ontorres_10/" class="social-link instagram"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Curso de Desarrollo web online 2020 <img src="images/code_image.png" width="50" height="50" alt="image_code"></p>
+        </div>
+        <div>
+          <p>
+            Designed with <\3 by <a href="https://twitter.com/nieltorres">@nieltorres</a>
+          </p>
+        </div>
+      </div>  
+    </footer>
+
   </body>
 </html>
