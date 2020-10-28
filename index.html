@@ -5,7 +5,9 @@
     <title>Niel Torres</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 720px)"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="header">
@@ -31,14 +33,16 @@
         </nav> 
       </div>
     </header>
-    <section class="hero">
+
+   <!--  <section class="hero">
       <div class="container">
         <h1>
           Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
         </h1>
         <img class="hero-image" src="images/IMG_8392.png" width="300" height="200" alt="imagen principal del sitio"> 
-    </section>
-      </div>
+      </div>  
+    </section> -->
+      
     <section id="portafolio" class="portfolio">
       <div class="container">
         <h2>Portafolio (Proyectos Destacados)</h2>
@@ -53,15 +57,39 @@
                 de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
           </div>
           <figure class="project-imageContainer">
-            <div class="mockup-container iphone">
+            <image src="images/mock_iphone_2.png" width="500"></image>
+          <!--   <div class="mockup-container iphone">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
                   <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
                   <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
               </svg>
-            </div>  
+            </div>   -->
+          </figure>  
+        </article>
+
+        <article class="project">
+          <div class="project-details">
+            <h3>Videos</h3>
+            <h6>React Native / React</h6>
+            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+            <p>Platzi Video fue el resultado de 3 meses de trabajo
+                para crear la mejor app para enseñar el funcionamiento
+                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+          </div>
+          <figure class="project-imageContainer">
+            <image src="images/mock_iphone_2.png" width="500"></image>
+            <!-- <div class="mockup-container iphone">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
+                  <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
+                  <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
+              </svg>
+            </div>  --> 
           </figure>  
         </article>
       </div>
+
+      
     </section>
     
     <div class="container">
@@ -72,7 +100,7 @@
       <div class="container">
         <article class="event">
           <figure class="event-imageContainer">
-            <img src="images/teletrabajo.png" width="500" />
+            <img class="event-image" src="images/teletrabajo.png" width="500" />
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Perú 2018</h3>

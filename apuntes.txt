@@ -1,0 +1,18 @@
+
+------------------
+RESPONSIVE DESIGN
+------------------
+
+Unidades relativas de medida:
+
+Porcentaje: longitud referente al tamaño de los elementos padre
+
+em: unidad relativa al tamaño de fuente especificada más cercano
+
+rem: unidad relativa al tamaño de fuente especificada en el ancestro más lejano (html o body)
+
+vw / vh: unidad relativa porcentual con respecto al viewport
+
+
+--------------------------------------------------------------------------------------
+
