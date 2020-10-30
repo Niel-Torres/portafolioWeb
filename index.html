@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <!-- Logo -->
@@ -40,7 +40,7 @@
         <h1>
           Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
         </h1>
-        <img class="hero-image" src="images/nieltorres.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+        <img class="hero-image" src="images/nieltorres_cuerpo2.PNG" width="500" height="300" alt="imagen principal del sitio"> 
       </div>  
     </section>
       
@@ -186,6 +186,21 @@
         </div>
       </div>  
     </footer>
+    <script>
+
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');  
+
+      burgerButton.addEventListener('click', function(){
+        if(menu.classList.contains('is_active')){
+          menu.classList.remove('is_active');
+        }
+        else{
+          menu.classList.add('is_active');
+        }
+      });
+
+    </script>
 
   </body>
 </html>
