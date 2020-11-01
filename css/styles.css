@@ -150,7 +150,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   .project-course,
   .project-date,
   .project-url {
@@ -405,7 +405,7 @@ body {
 
   /* Desktop first que empieces desde el MQ más grande*/
 
-  @media screen and (max-width: 1023px){
+  @media screen and (max-width: 2560px){
     .event-list-title {
       margin-left: 0;
     }
@@ -466,6 +466,12 @@ body {
       position: relative;
     }
   }
+
+  @media screen and (max-width: 1919px){
+  }  
+
+  @media screen and (max-width: 1023px){
+  }  
 
   @media screen and (max-width: 767px){
 
@@ -629,6 +635,11 @@ body {
     .hero {
       padding: 2em 1em;
     }
+
+    .footer img {
+      padding: 10px;
+    }
+
     
   }
 
