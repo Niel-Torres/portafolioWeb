@@ -188,17 +188,33 @@
     </footer>
     <script>
 
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+      console.log(ipad.matches);
+      
+      ipad.addListener(validation);
+
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow);  
+        } 
+        else{
+          burgerButton.removeEventListener('click', hideShow);  
+        }
+      }
+
       const menu = document.querySelector('.menu');
       const burgerButton = document.querySelector('#burger-menu');  
 
-      burgerButton.addEventListener('click', function(){
+      function hideShow(){
         if(menu.classList.contains('is_active')){
           menu.classList.remove('is_active');
         }
         else{
           menu.classList.add('is_active');
         }
-      });
+      }
+
+      burgerButton.addEventListener('click', hideShow);
 
     </script>
 
