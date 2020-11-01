@@ -7,6 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 720px)"> -->
     <link rel="stylesheet" href="css/styles.css">
+     <!-- <style>
+      @media screen and (max-width: 768px) {
+        body {
+          border: 10px solid blue;
+        }
+      }
+    </style> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -49,16 +56,16 @@
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
           <div class="project-details">
-            <h3>Videos</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-            <p>Platzi Video fue el resultado de 3 meses de trabajo
+            <h3 class="project-title">Platzi Videos</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p>
+            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
                 para crear la mejor app para enseñar el funcionamiento
                 de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
           </div>
           <figure class="project-imageContainer">
-            <image src="images/mock_iphone_2.png" width="500"></image>
+            <img class="project-image" src="images/mock_iphone_2.png" width="500" alt="prouyecto del curso de React Native">
           <!--   <div class="mockup-container iphone">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
                   <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
@@ -70,16 +77,16 @@
 
         <article class="project">
           <div class="project-details">
-            <h3>Videos</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-            <p>Platzi Video fue el resultado de 3 meses de trabajo
+            <h3 class="project-title">Platzi Videos</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p>
+            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
                 para crear la mejor app para enseñar el funcionamiento
                 de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
           </div>
           <figure class="project-imageContainer">
-            <image src="images/mock_iphone_2.png" width="500"></image>
+            <img class="project-image" src="images/mock_iphone_2.png" width="500" alt="prouyecto del curso de React Native">
             <!-- <div class="mockup-container iphone">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
                   <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
@@ -129,10 +136,10 @@
 
         <article class="event">
           <figure class="event-imageContainer">
-          <img class="event-image" src="images/teletrabajo.png" width="500" />
-           <!--  <div class="flexible-video">
-              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
+          <!-- <img class="event-image" src="images/teletrabajo.png" width="500" /> -->
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Perú 2018</h3>
@@ -143,7 +150,8 @@
 
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/teletrabajo.png" width="500" />
+            <!-- <img class="event-image" src="images/teletrabajo.png" width="500" /> -->
+            <video class="html-video" src="videos/f8.mp4" width="1280" height="720" controls></video>
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Perú 2018</h3>
@@ -157,7 +165,6 @@
 
     <section id="contacto" class="contact">
       <div class="container">
-
         <form action="/suscription" class="form-email">
           <h3>¿Creamos algo juntos?</h3>
           <!-- <label for="email">Déjame tu email</label> -->
@@ -177,7 +184,7 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <p>Curso de Desarrollo web online 2020 <img src="images/code_image.png" width="50" height="50" alt="image_code"></p>
+          <p>Curso de Desarrollo web online 2020 <img src="images/platzi.png" width="80" alt="nieltorres"></p>
         </div>
         <div>
           <p>
@@ -187,9 +194,10 @@
       </div>  
     </footer>
     <script>
-
       const ipad = window.matchMedia('screen and (max-width: 767px)');
-      console.log(ipad.matches);
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');  
+      // console.log(ipad.matches);
       
       ipad.addListener(validation);
 
@@ -202,8 +210,7 @@
         }
       }
 
-      const menu = document.querySelector('.menu');
-      const burgerButton = document.querySelector('#burger-menu');  
+      validation(ipad);
 
       function hideShow(){
         if(menu.classList.contains('is_active')){
@@ -213,8 +220,6 @@
           menu.classList.add('is_active');
         }
       }
-
-      burgerButton.addEventListener('click', hideShow);
 
     </script>
 
