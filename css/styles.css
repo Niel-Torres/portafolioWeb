@@ -491,18 +491,28 @@ body {
 
     .header ol {
       display: block;
+     
     }
 
     .header ol li {
-      height: 50px;
+      height: 100%;
+      font-size: 16px;
     }
 
     .header a {
       justify-content: center;
       height: 40px;
-      font-size: 2em;
+      font-size: 1em;
       text-decoration: underline;
       margin-bottom: .5em;
+      color: #212121;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    a {
+      font-family: 'Ginger Bold';
+      letter-spacing: 0.1em;
     }
 
     .header .logo{
@@ -511,17 +521,18 @@ body {
 
     .menu {
       position: fixed;
-      background: rgba(5,111,255,.9);
+      background: #FFF;
       z-index: 3;
       top: 0;
-      left: -100vw; 
-      width: 100vw;
+      left: -110vw; 
+      width: 93vw;
       /* height: 100vh; */
       bottom: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .3s;
+      transition: 0.55s;
+      border: 20px solid #1b2127;
       
     }
 
@@ -623,6 +634,10 @@ body {
       background-size: 100%;
     }
 
+    .menu { 
+      width: 90vw;
+    }
+
   }
 
   @media screen and (max-width: 320px){
@@ -638,6 +653,10 @@ body {
 
     .footer img {
       padding: 10px;
+    }
+
+    .menu {
+      width: 88vw;
     }
 
     
