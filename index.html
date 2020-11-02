@@ -17,9 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
+
+    <!-- <i class="icon-menu burger-button" id="burger-menu"></i> -->
     <header class="header">
       <div class="container">
+        <a href="#" class="mob-nav-btn js-mob-nav-btn burger-button" data-mob-nav-on="on" id="jsMobNavBtn"></a>
+
         <!-- Logo -->
         <figure class="logo">
           <img src="images/marca-Niels.png" height="50" alt="Logo de http://nieltorres.com" />
@@ -38,6 +41,12 @@
               <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
+
+          <!-- <div class="contact_menu">
+            <address class="addresse"><a href="https://goo.gl/maps/fzzmqZ25Gmz" rel="external" target="_blank">16 Place Cormontaigne, 59000 Lille France</a></address><br>
+            <a href="tel:+33(0)3 20 88 11 59" rel="external" class="phone">+33(0)3 20 88 11 59</a><br>
+            <a href="mailto:contact@wokine.com" rel="external" class="mail">contact@wokine.com</a>
+          </div> -->
         </nav>
 
       </div>
@@ -198,16 +207,19 @@
       const ipad = window.matchMedia('screen and (max-width: 767px)');
       const menu = document.querySelector('.menu');
       const burgerButton = document.querySelector('#burger-menu');  
-      // console.log(ipad.matches);
+      const jsMobNavBtn = document.querySelector('#jsMobNavBtn');
+      // console.log(jsMobNavBtn);
       
       ipad.addListener(validation);
 
       function validation(event){
         if(event.matches){
-          burgerButton.addEventListener('click', hideShow);  
+          // burgerButton.addEventListener('click', hideShow); 
+          jsMobNavBtn.addEventListener('click', jsbutton); 
         } 
         else{
-          burgerButton.removeEventListener('click', hideShow);  
+          jsMobNavBtn.removeEventListener('click', jsbutton);
+          // burgerButton.removeEventListener('click', hideShow);  
         }
       }
 
@@ -218,6 +230,19 @@
           menu.classList.remove('is_active');
         }
         else{
+          menu.classList.add('is_active');
+        }
+      }
+
+      jsMobNavBtn.addEventListener('click', jsbutton);
+
+      function jsbutton(e){
+        e.preventDefault();
+        if(jsMobNavBtn.classList.contains('on')){
+          jsMobNavBtn.classList.remove('on');
+          menu.classList.remove('is_active');
+        } else {;
+          jsMobNavBtn.classList.add('on');
           menu.classList.add('is_active');
         }
       }
