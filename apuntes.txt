@@ -1,0 +1,25 @@
+
+------------------
+RESPONSIVE DESIGN
+------------------
+
+Unidades relativas de medida:
+
+Porcentaje: longitud referente al tamaño de los elementos padre
+
+em: unidad relativa al tamaño de fuente especificada más cercano
+
+rem: unidad relativa al tamaño de fuente especificada en el ancestro más lejano (html o body)
+
+vw / vh: unidad relativa porcentual con respecto al viewport
+
+
+--------------------------------------------------------------------------------------
+
+CSS Positions
+static: es la propiedad por defecto.
+Con las otras opciones, se activan las propiedades de top, bottom, left, right y z-index.
+relative: el objeto se mueve en base al lugar donde se encuentra originalmente.
+absolute: el objeto se ubica de manera absoluta con el elemento más cercano que tenga posición relativa o con el body.
+fixed: El elemento se muestra de manera fija en el viewport.
+sticky: El elemento se queda de manera fija una vez que aparece en pantalla.

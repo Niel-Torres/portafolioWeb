@@ -1,152 +1,586 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Niel Torres</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <!-- Logo -->
-        <figure class="logo">
-          <img src="images/marca-Niels.png" height="50" alt="Logo de http://nieltorres.com" />
-        </figure>
 
-        <!-- Nav -->
-        <nav class="menu">  
+<head>
+  <meta charset="UTF-8" />
+  <title>Niel Torres</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 720px)"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <style>
+      @media screen and (max-width: 768px) {
+        body {
+          border: 10px solid blue;
+        }
+      }
+    </style> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- <i class="icon-menu burger-button" id="burger-menu"></i> -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="mob-nav-btn js-mob-nav-btn burger-button" data-mob-nav-on="on" id="burger-menu"></a>
+
+      <!-- Logo -->
+      <figure class="logo">
+        <img src="images/marca-Niels.png" height="50" alt="Logo de http://nieltorres.com" />
+      </figure>
+
+      <!-- Nav -->
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#portafolio" onclick="hideShowMenu($(this).attr('href'))">Mi experiencia</a>
+          </li>
+          <li>
+            <a class="link" href="#projects" onclick="hideShowMenu($(this).attr('href'))">Proyectos</a>
+          </li>
+          <li>
+            <a class="link" href="#contacto" onclick="hideShowMenu($(this).attr('href'))">Trabajemos juntos</a>
+          </li>
+        </ol>
+
+        <!-- <div class="contact_menu">
+            <address class="addresse"><a href="https://goo.gl/maps/fzzmqZ25Gmz" rel="external" target="_blank">16 Place Cormontaigne, 59000 Lille France</a></address><br>
+            <a href="tel:+33(0)3 20 88 11 59" rel="external" class="phone">+33(0)3 20 88 11 59</a><br>
+            <a href="mailto:contact@wokine.com" rel="external" class="mail">contact@wokine.com</a>
+          </div> -->
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br /> <strong>FrontEnd y BackEnd</strong> con
+        <br> pasión por la <strong>tecnología</strong>
+      </h1>
+      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+    </div>
+  </section>
+
+  <section id="portafolio" class="portfolio">
+    <div class="container">
+      <h2>Mi Experiencia laboral</h2>
+      <article class="project">
+        <section class="experience-container">  
           <ol>
-            <li>
-              <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
+            <li class="list-container">
+              <a href="javascript:void(0);" class="timeline-head">
+                <figure>
+                  <img lazyload="true" class="company-logo" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C4D0BAQE-LuyMLMByIA/company-logo_100_100/0?e=1612396800&amp;v=beta&amp;t=Y2JtF2oSQo-UQ2iRGkuV8w6QBbWJGjPQQcwc5_qteLQ" alt="companyName">
+                </figure>
+                <div class="postion-detail">
+                  <div class="large-semibold"><span class="empresa">everis</span></div>
+                  <div class="medium"> 4 años 3 meses</div>
+                </div>
+              </a>
+              <div class="experience-roles-container collapsable-list-container">
+                <ul>
+                  <li class="role-container">
+                    <div class="timeline path">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Scrum Master | Technical Lead</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">abr. de 2020 - </span><span class="medium">actualidad • 8 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Parque empresarial La Finca, Pozuelo de Alarcón, Madrid</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span class="description-text">Scrum Master | Technical Lead en la actual aplicación móvil android/iOS/movilizado "MiOrange"</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="role-container">
+                    <div class="timeline path">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Solutions Analyst | Developer - Ionic /Angular</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">feb. de 2019 - </span><span class="medium">abr. de 2020 • 1 año 3 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Parque empresarial La Finca, Pozuelo de Alarcón, Madrid</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span>Analista/Desarrollador en la aplicación móvil android/iOS/movilizado "MiJazztel"</span>
+                          <br><br><span>Actividades:</span>
+                          <br><span>• Desarrollo de nuevos evolutivos en la nueva app/movilizado del área de clientes de Jazztel.</span>
+                          <br><span>• Tecnologías: Ionic 3, Angular 5, Cordova, Android, iOS.</span>
+                          <br><span>• Ejecuciones de planes de pruebas unitarias e integradas con Karma/Jazmine.</span>
+                          <br><span>• Análisis del código con "SonarQube".</span>
+                          <br><span>• Integración continua con jenkins y uso de AppCenter.</span>
+                          <br><span>• Actualización de paquetes al cliente en su app de tipo "Direct Update" con IBM MobileFirst.</span>
+                          <br><span>• Puesta en marcha de las mejoras implementadas.</span>
+                          <br><span>• IDE: Visual Studio Code, Xcode, Android Studio.</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="role-container">
+                    <div class="timeline">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Solutions Assistant | Developer PHP</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">sept. de 2016 - </span><span class="medium">feb. de 2019 - 2 años 6 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Camino de la Fuente de la Mora, 1, Madrid</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span>Desarrollo y mantenimiento de aplicaciones corporativas web de Orange con metodología de trabajo Agile. Dichas aplicaciones estaban dirigidas a distribuidores y puntos de venta.</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ol>
-        </nav> 
-      </div>
-    </header>
-    <section class="hero">
-      <div class="container">
-        <h1>
-          Hola! Soy <strong>Niel Torres</strong> Analista/Desarrollador <br/> <strong>FrontEnd y BackEnd</strong> con <br> pasión por la <strong>tecnología</strong>
-        </h1>
-        <img class="hero-image" src="images/IMG_8392.png" width="300" height="200" alt="imagen principal del sitio"> 
-    </section>
-      </div>
-    <section id="portafolio" class="portfolio">
-      <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-          <div class="project-details">
-            <h3>Videos</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
-            <p>Platzi Video fue el resultado de 3 meses de trabajo
-                para crear la mejor app para enseñar el funcionamiento
-                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+        </section>  
+        <div class="project-details">
+          <h3 class="project-title">Tecnologías y Herramientas</h3>
+          <h6 class="project-course"></h6>
+          <p class="project-date"><small><strong></strong></small></p>
+          <!-- <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p> -->
+          <p class="project-description">        
+            <!-- Breve descripción del proyecto -->
+            <!-- <span>Angular 5 | Ionic 3 | JavaScript ES6 | HTML 5 | CSS || SASS | | Git | NodeJS | Boostrap | Android | iOS</span> -->
+          </p>
+        </div>
+        <figure class="project-imageContainer">
+          <!-- <img class="project-image" src="images/app_miorange_1.png" width="500" alt="prouyecto del curso de React Native"> -->
+          <div class="tecnologias-herramientas">
+            <span class="tecnologia-text">Angular 5 | Ionic 3 | JavaScript ES6 | HTML 5 | CSS || SASS | Git | Cordova</span>
+            <br><br>
+            <span class="icon-angular tecnologia-icon"></span>
+            <span class="icon-ionic tecnologia-icon"></span>
+            <span class="icon-javascript tecnologia-icon"></span>
+            <span class="icon-html5 tecnologia-icon"></span>
+            <span class="icon-css3 tecnologia-icon"></span>
+            <span class="icon-sass tecnologia-icon"></span>
+            <span class="icon-git tecnologia-icon"></span>
+            <span class="icon-apachecordova tecnologia-icon"></span>
+            <br><br>
+            <span class="herramienta-text">Visual Studio Code | Android Studio | Xcode | SonarQube | Jenkins | npm</span>
+            <br><br>
+            <span class="icon-visualstudio herramienta-icon"></span>
+            <span class="icon-android herramienta-icon"></span>
+            <span class="icon-appleinc herramienta-icon"></span>
+            <span class="icon-xcode herramienta-icon"></span>
+            <span class="icon-android1 herramienta-icon"></span>
+            <span class="icon-sonarqube herramienta-icon"></span>
+            <span class="icon-jenkins herramienta-icon"></span>
+            <span class="icon-npm tecnologia-icon"></span>
           </div>
-          <figure class="project-imageContainer">
-            <div class="mockup-container iphone">
+        </figure>
+      </article>
+
+      <article class="project">
+        <section class="experience-container">  
+          <ol>
+            <li class="list-container">
+              <a href="javascript:void(0);" class="timeline-head">
+                <figure>
+                  <img lazyload="true" class="company-logo" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C510BAQE1As99HbPykw/company-logo_100_100/0?e=1612396800&v=beta&t=fbj9wseRcdfqYWMzQoJk_mFppjpUx5luwDmHO3WhoNY" alt="companyName">
+                </figure>
+                <div class="postion-detail">
+                  <div class="large-semibold"><span class="empresa">serem</span></div>
+                  <div class="medium"> 10 meses</div>
+                </div>
+              </a>
+              <div class="experience-roles-container collapsable-list-container">
+                <ul>
+                  <li class="role-container">
+                    <div class="timeline">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Developer PHP</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">sept. de 2016 - </span><span class="medium">jun. de 2017 • 10 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Madrid y alrededores, España</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span>Desarrollo y mantenimiento de aplicaciones corporativas web de Orange con metodología de trabajo Agile. Dichas aplicaciones estaban dirigidas a distribuidores y puntos de venta.</span>
+
+                          <span class="description-text">Tecnologías usadas en diversos proyectos :</span>
+                          <span class="description-text">• Frameworks: Symfony con Doctrine (ORM) y Zend</span>
+                          <span class="description-text">• Patrón MVC (modelo-vista-controlador).</span>
+                          <span class="description-text">• Control de versiones: GIT y SVN</span>
+                          <span class="description-text">• Lenguajes: PHP, SQL, JavaScript (Ajax y Jquery).</span>
+                          <span class="description-text">• Scripts en Unix y en Windows</span>
+                          <span class="description-text">• Sistema gestor de bbdd en diferentes aplicaciones: MySQL, Oracle, PostgreSQL, SQL Server</span>
+                          <span class="description-text">• Metodología de trabajo SCRUM</span>
+                          <span class="description-text">• Plataforma: Unix, Windows</span>
+  
+                          <span class="description-text">• Desarrollo de evolutivos mediante metodología Scrum.</span>
+                          <span class="description-text">• Despliegue de máquinas virtuales con vagrant.</span>
+                          <span class="description-text">• Control y seguimiento de errores.</span>
+                        </div>
+                        
+                      </dd>
+                    </dl>
+                  </li>
+                
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+        <div class="project-details">
+          <h3 class="project-title">Tecnologías y Herramientas</h3>
+          <h6 class="project-course"></h6>
+          <p class="project-date"><small><strong></strong></small></p>
+          <!-- <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p> -->
+          <p class="project-description">        
+            <!-- Breve descripción del proyecto -->
+            <!-- <span>Angular 5 | Ionic 3 | JavaScript ES6 | HTML 5 | CSS || SASS | | Git | NodeJS | Boostrap | Android | iOS</span> -->
+          </p>
+        </div>
+        <figure class="project-imageContainer">
+          <!-- <img class="project-image" src="images/mock_iphone_2.png" width="500" alt="prouyecto del curso de React Native"> -->
+          <!-- <div class="mockup-container iphone">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" width="500" height="300">
                   <image xlink:href="images/mock_iphone_2.png" width="1500" height="1300" x="-700" y="-400"></image>
                   <image xlink:href="images/marca-Niels.png" width="200" height="200" x="420" y="420"></image>
               </svg>
-            </div>  
-          </figure>  
-        </article>
-      </div>
-    </section>
-    
-    <div class="container">
-      <h2 class="event-list-title">Más sobre mi experiencia</h2>
-    </div>
+            </div>  -->
+            <div class="tecnologias-herramientas">
+              <span class="tecnologia-text">PHP | SQL| JavaScript | HTML 5 | CSS | Git | vagrant | Linux</span>
+              <br><br>
+              <span class="icon-php tecnologia-icon"></span>
+              <span class=" icon-database tecnologia-icon"></span>
+              <span class="icon-javascript tecnologia-icon"></span>
+              <span class="icon-html5 tecnologia-icon"></span>
+              <span class="icon-css3 tecnologia-icon"></span>
+              <span class="icon-git tecnologia-icon"></span>
+              <span class="icon-vagrant tecnologia-icon"></span>
+              <span class="icon-tux tecnologia-icon"></span>
+             
+              <!-- <span class="icon-node-dot-js tecnologia-icon"></span> -->
+              
+              <br><br>
+              <span class="herramienta-text">MySQL | Postgresql | Oracle DB | PHPStorm | SonarQube | Jenkins | Apache</span>
+              <br><br>
+              <span class="icon-mysql herramienta-icon"></span>
+              <span class="icon-postgresql herramienta-icon"></span>
+              <span class="icon-oracle herramienta-icon"></span>
+              <span class="icon-intellijidea herramienta-icon"></span>
+              <span class="icon-sonarqube herramienta-icon"></span>
+              <span class="icon-jenkins herramienta-icon"></span>
+              <span class="icon-apache herramienta-icon"></span>
+            </div>
+        </figure>
+      </article>
 
-    <section id="eventos" class="event-list">
-      <div class="container">
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img src="images/teletrabajo.png" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf Perú 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/teletrabajo.png" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf Perú 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/teletrabajo.png" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf Perú 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/teletrabajo.png" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf Perú 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-
-      </div>   
-    </section>
-
-    <section id="contacto" class="contact">
-      <div class="container">
-
-        <form action="/suscription" class="form-email">
-          <h3>¿Creamos algo juntos?</h3>
-          <label for="email">Déjame tu email</label>
-          <input type="text" placeholder="@gmail.com" id="email">  
-          <input type="submit" value="enviar">
-        </form>
-        <div class="social">
-          <a href="https://twitter.com/ntorrema" class="social-link twitter"></a>
-          <a href="https://facebook.com/on.torres.m" class="social-link facebook"></a>
-          <a href="https://github.com/nieltorres" class="social-link github"></a>
-          <a href="https://www.instagram.com/ontorres_10/" class="social-link instagram"></a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div>
-          <p>Curso de Desarrollo web online 2020 <img src="images/code_image.png" width="50" height="50" alt="image_code"></p>
-        </div>
-        <div>
-          <p>
-            Designed with <\3 by <a href="https://twitter.com/nieltorres">@nieltorres</a>
+      <article class="project">
+        <section class="experience-container">  
+          <ol>
+            <li class="list-container">
+              <a href="javascript:void(0);" class="timeline-head">
+                <figure>
+                  <img lazyload="true" class="company-logo" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C4D0BAQHunv9ilgS-Dg/company-logo_100_100/0?e=1612396800&v=beta&t=W8jIIgXu6AUVjEq976ugU8YRmtqTY5uyt8de96HvbmE" alt="companyName">
+                </figure>
+                <div class="postion-detail">
+                  <div class="large-semibold"><span class="empresa">OKN</span></div>
+                  <div class="medium"> 1 año 4 meses</div>
+                </div>
+              </a>
+              <div class="experience-roles-container collapsable-list-container">
+                <ul>
+                  <li class="role-container">
+                    <div class="timeline">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Programador Junior PHP</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">mar. de 2012 - </span><span class="medium">jun. de 2013 • 1 año y 4 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Madrid y alrededores, España</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span class="description-text">Mantenimiento y resolución de incidencias. Control y seguimiento de errores en las aplicaciones web con metodología de trabajo Agile. </span>
+                          <span class="description-text">Tecnologías usadas en diversos proyectos :</span>
+                          <span class="description-text">•  Metodología de trabajo: SCRUM</span>
+                          <span class="description-text">• Patrón MVC (modelo-vista-controlador).</span>
+                          <span class="description-text">• Control de versiones: GIT.</span>
+                          <span class="description-text">• Lenguajes: SQL, PHP y como patrón de arquitectura MVC.</span>
+                          <span class="description-text">• Plataforma: Unix, Windows</span>
+                          <span class="description-text">• Scripts en Unix y en Windows</span>
+                          <span class="description-text">• IDES: Eclipse</span>
+                          <span class="description-text">• Herramientas: Firebug (firefox), XAMPP</span>
+                          <span class="description-text">• Control y seguimiento de errores.</span>
+                          <span class="description-text"></span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+        <div class="project-details">
+          <h3 class="project-title">Tecnologías y Herramientas</h3>
+          <h6 class="project-course"></h6>
+          <p class="project-date"><small><strong></strong></small></p>
+          <!-- <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p> -->
+          <p class="project-description">        
+            <!-- Breve descripción del proyecto -->
           </p>
         </div>
-      </div>  
-    </footer>
+        <figure class="project-imageContainer">
+          <!-- <img class="project-image" src="images/mock_iphone_2.png" width="500" alt="prouyecto del curso de React Native"> -->
+            <div class="tecnologias-herramientas">
+              <span class="tecnologia-text">PHP | JavaScript | SQL | HTML 5 | CSS | Git | Linux</span>
+              <br><br>
+              <span class="icon-php tecnologia-icon"></span>
+              <span class="icon-javascript tecnologia-icon"></span>
+              <span class=" icon-database tecnologia-icon"></span>
+              <span class="icon-html5 tecnologia-icon"></span>
+              <span class="icon-css3 tecnologia-icon"></span>
+              <span class="icon-git tecnologia-icon"></span>
+              <span class="icon-tux tecnologia-icon"></span>          
+              <br><br>
+              <span class="herramienta-text">MySQL | Eclipse | XAMPP | Apache</span>
+              <br><br>
+              <span class="icon-mysql herramienta-icon"></span>
+              <span class="icon-eclipseide herramienta-icon"></span>
+              <span class="icon-apache herramienta-icon"></span>
+            </div>
+        </figure>
+      </article>
 
-  </body>
+      <article class="project">
+        <section class="experience-container">  
+          <ol>
+            <li class="list-container">
+              <a href="javascript:void(0);" class="timeline-head">
+                <figure>
+                  <img lazyload="true" class="company-logo" width="100" height="100" src="https://media-exp1.licdn.com/dms/image/C560BAQEvQEYVlgahLg/company-logo_100_100/0?e=1612396800&v=beta&t=T_oBldUCLQ6JYXj_Xqa3dNAuzhkrDuByxvgHnhSzPew" alt="companyName">
+                </figure>
+                <div class="postion-detail">
+                  <div class="large-semibold"><span class="empresa">coremain</span></div>
+                  <div class="medium"> 4 meses</div>
+                </div>
+              </a>
+              <div class="experience-roles-container collapsable-list-container">
+                <ul>
+                  <li class="role-container">
+                    <div class="timeline path">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Becario | Prácticas FP</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">sept. de 2008 - </span><span class="medium">dic. de 2008 - 3 meses</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Madrid y alrededores, España</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span class="description-text">Prácticas de FP grado superior - Coremain S.L.</span>
+                          <span class="description-text">• Gestión documental</span>
+                          <span class="description-text">• Versionado de docs</span>
+                          <span class="description-text">• Sistema de notificaciones de usuarios</span>
+                          <span class="description-text">• workflows</span>
+                          <span class="description-text">• Altas, bajas, modificaciones de usuarios</span>
+                          <span class="description-text">• Lenguajes: SQL, PHP, HTML</span>
+                          <span class="description-text">• Plataforma: Linux</span>
+                          <span class="description-text">• Sistema de notificaciones de usuarios</span>
+                          <span class="description-text">• workflows</span>
+                          <span class="description-text">• Altas, bajas, modificaciones de usuarios por consola</span>
+                          <span class="description-text">• Sql, php, Linux</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="role-container">
+                    <div class="timeline">
+                      <div class="landmark-container">
+                        <div class="landmark"></div>
+                      </div>
+                    </div>
+                    <dl>
+                      <dt class="medium-semibold"><span>Becario | Proceso de incorporación a plantilla</span></dt>
+                      <dd class="medium time-period">
+                        <span class="medium">dic. de 2008 - </span><span class="medium">ene. de 2009 • 1 mes</span>
+                      </dd>
+                      <dd class="small-light entity-location"><span>Madrid y alrededores, España</span></dd>
+                      <dd class="medium entity-description">
+                        <div class="description medium">
+                          <span class="description-text">Altas, bajas, modificaciones de clientes en bbdd por consola</span>
+                        </div>
+                      </dd>
+                    </dl>
+                  </li>                   
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>  
+        <div class="project-details">
+          <h3 class="project-title">Tecnologías y Herramientas</h3>
+          <h6 class="project-course"></h6>
+          <p class="project-date"><small><strong></strong></small></p>
+          <!-- <p class="project-url"><small><strong>Puedes verlo en::</strong> www.platzi.com/native</small></p> -->
+          <p class="project-description">        
+            <!-- Breve descripción del proyecto -->
+          </p>
+        </div>
+        <figure class="project-imageContainer">
+          <!-- <img class="project-image" src="images/app_miorange_1.png" width="500" alt="prouyecto del curso de React Native"> -->
+          <div class="tecnologias-herramientas">
+            <span class="tecnologia-text">PHP | JavaScript | Git | SQL | Linux</span>
+            <br><br>
+            <span class="icon-php tecnologia-icon"></span>
+            <span class="icon-javascript tecnologia-icon"></span>
+            <span class=" icon-database tecnologia-icon"></span>
+            <span class="icon-git tecnologia-icon"></span>
+            <span class="icon-tux tecnologia-icon"></span>
+            <br><br>          
+            <span class="herramienta-text">MySQL | XAMPP | Apache</span>
+            <br><br>
+            <span class="icon-mysql herramienta-icon"></span>
+            <span class="icon-apache herramienta-icon"></span>
+          </div>
+        </figure>
+      </article>
+    </div>
+
+
+  </section>
+
+  <!-- <div class="flexible-video">
+      <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+
+  <!-- <video class="html-video" src="videos/f8.mp4" width="1280" height="720" controls></video> -->
+  <section class="experience-container-title" id="projects">  
+    <div class="container">
+      <h2 class="event-list-title">Más sobre mi experiencia</h2>
+      <p class="event-list-title">Os presento algunos proyectos en los que he colaborado:</p>
+    </div>
+  </section>
+  <section id="eventos" class="event-list">
+    <div class="container">
+      <article class="event">
+        <figure class="event-imageContainer">
+          <!-- <img class="event-image" src="images/teletrabajo.png" width="500" /> -->
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/NrLWf0epvLY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>  
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">App MiJazztel</h3>
+          <p class="event-description">App móvil<strong> Android | iOs | Web versión móvil PWA con los framework Angular 5, Ionic 3 y Apache Cordova.</strong> Es la APP del área de clientes de Jazztel, desde la cual se puede consultar los datos de tu cuenta, gestionar facturas, gestionar consumos voz y datos, gestión de servicios, gestión de pagos, etc</p>
+          <a class="event-url" href="https://areaprivada.jazztel.com/movilizado/index.html#/Home/dashboardApp" target="_blank">Ver App</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="images/miorange.png" width="500" />
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">App MiOrange</h3>
+          <p class="event-description">App móvil <strong>Android | iOs | Web versión móvil PWA con los framework Angular JS, Ionic 1 y Apache Cordova.</strong> Es la APP del área de clientes de Orange, desde la cual se puede consultar los datos de tu cuenta, gestionar facturas, gestionar consumos voz y datos, gestión de servicios, gestión de pagos, etc</p>
+          <a class="event-url" href="https://areaprivada.orange.es/movilizado/index.html" target="_blank">Ver App</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="images/agendaunica.PNG" width="500" />
+          <!-- <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div> -->
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">Aplicaciones Web corporativas de Orange</h3>
+          <p class="event-description">Web TuCita Orange | AgendaUnica entre otras, todas ellas desarrolladas con el <strong>framework PHP de symfony</strong> con conexión a bases de datos de <strong>mysql, postgresql y oracle database</strong></p>
+          <a class="event-url" href="https://tucita.orange.es/selecciona-servicio.html" target="_blank">Ver web</a>
+        </div>
+      </article>
+
+      <article class="event">
+        <figure class="event-imageContainer">
+          <!-- <img class="event-image" src="images/teletrabajo.png" width="500" /> -->
+          <!-- <video class="html-video" src="videos/f8.mp4" width="1280" height="720" controls></video> -->
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/se_iBSJBCdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>  
+        </figure>
+        <div class="event-detail">
+          <h3 class="event-title">OKN Learning</h3>
+          <p class="event-description">Web de plataforma e-learning LXP en <strong>PHP</strong> para empleados de empresas, cuenta con todo tipo de recursos: cursos, itinerarios, programas, gestión de informes, etc</p>
+          <a class="event-url" href="https://www.oknlearning.com/" target="_blank">Ver web</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <form action="/suscription" class="form-email">
+        <h3>¿Creamos algo juntos?</h3>
+        <!-- <label for="email">Déjame tu email</label> -->
+        <input type="text" placeholder="@gmail.com" id="email">
+        <!-- <input type="submit" value="enviar"> -->
+        <button>Enviar</button>
+      </form>
+      <div class="social">
+        <a href="https://twitter.com/ntorrema" class="social-link twitter"></a>
+        <a href="https://facebook.com/on.torres.m" class="social-link facebook"></a>
+        <a href="https://github.com/nieltorres" class="social-link github"></a>
+        <a href="https://www.instagram.com/ontorres_10/" class="social-link instagram"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p>Portafolio web <img src="images/marca-niel-horizontal.png" width="80" alt="nieltorres"></p>
+      </div>
+      <div>
+        <p>
+          Copyright © 2020 nieltorres.com
+          <!-- Designed with 👨🏾‍💻 by <a href="https://twitter.com/nieltorres">@nieltorres</a> -->
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/myscript.js"></script>
+
 </html>
