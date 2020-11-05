@@ -14,10 +14,10 @@ validationMatchMedia();
 
 function validationMatchMedia() {
     if (ipad.matches) {
-        console.log("::TRUE::");
+        // console.log("::TRUE::");
         burgerButton.addEventListener('click', hideShow);
     } else {
-        console.log("::FALSE::");
+        // console.log("::FALSE::");
         burgerButton.removeEventListener('click', hideShow);
     }
 }
@@ -52,6 +52,11 @@ $(window).scroll(function(event) {
         header.classList.remove("sticky");
     }
   }); 
+
+function sendEmailContact(){
+    const email = $("#email").val();
+    window.open('mailto:'+email+'?subject=subject&body=body');
+}  
 
 
 
