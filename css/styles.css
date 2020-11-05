@@ -750,6 +750,11 @@ body {
     margin-top: 1em; 
   }
 
+  /* Evitar sombreado azul al dar click*/
+  a { 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+  }
+
 
 
   /* Desktop first que empieces desde el MQ más grande*/
@@ -835,7 +840,6 @@ body {
     .event .event-image{
       height: 17em;
     }
-
  
   }
 
@@ -977,13 +981,10 @@ body {
       width: 100%;
     }
 
-    /* .event .event-image {
-      width: initial;
+    .event .event-image{
+      height: auto;
     }
 
-    .event-imageContainer {
-      text-align: center;
-    } */
 
     /*testing new menu */
     
@@ -1027,7 +1028,8 @@ body {
       }
 
       .header.sticky {
-        background-color: #ff5d4c;
+        background-color: #1b2127;
+        /* background-color: #ff5d4c; */
       }
 
       .hero-image {
@@ -1078,6 +1080,7 @@ body {
       display: block;
       text-align: center;
       border: 1px solid transparent;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
     }
 
     .social-link {
@@ -1153,7 +1156,5 @@ body {
       font-size: .8em;
     }
 
-    
-    
   }
 
