@@ -587,7 +587,7 @@ body {
     color: white;
   }
 
-  .social-link.twitter {
+  /* .social-link.twitter {
     background-image: url('../images/twitter.svg');
   }
 
@@ -601,7 +601,7 @@ body {
 
   .social-link.instagram {
     background-image: url('../images/instagram.svg');
-  }
+  } */
 
   .form-email input {
     border-color: gray;
@@ -824,8 +824,32 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
   }
 
-  .hide{
-    display: none;
+  .scrollToTop {
+    line-height: 23px;
+    font-weight: bold;
+    height: auto;
+    padding: 0;
+    position: fixed;
+    right: 45px;
+    text-align: center;
+    text-decoration: none;
+    top: 90%;
+    width: auto;
+    background-color: firebrick;
+    z-index: 555;
+    border-radius: 2px;
+  }
+
+  .scrollToTop i {
+    font-size: 18px;
+    margin: 0px 2px 0 2px;
+    color: #fff;
+    vertical-align: top;
+    line-height: 1;
+  }
+
+  a.scrollToTop.scrolltotop-position-right.hide {
+    display: none !important;
   }
 
   /* Desktop first que empieces desde el MQ más grande*/
@@ -908,6 +932,10 @@ body {
       margin: 0 0 10px 0;
     }
 
+    .header figure {
+      margin: 10px 0 10px 0;
+    }
+
     .event .event-image{
       height: 17em;
     }
@@ -930,6 +958,10 @@ body {
       width: 55%;
       left: 435px;
     }
+
+    .scrollToTop {
+      right: 35px;
+    }  
   }  
 
   @media screen and (max-width: 767px){
@@ -1253,6 +1285,10 @@ body {
     
     .medium.entity-description {
       font-size: .8em;
+    }
+
+    .scrollToTop {
+      right: 25px;
     }
 
   }
