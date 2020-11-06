@@ -23,3 +23,44 @@ relative: el objeto se mueve en base al lugar donde se encuentra originalmente.
 absolute: el objeto se ubica de manera absoluta con el elemento más cercano que tenga posición relativa o con el body.
 fixed: El elemento se muestra de manera fija en el viewport.
 sticky: El elemento se queda de manera fija una vez que aparece en pantalla.
+
+
+
+---------------------------------------------------
+
+Algunar cosas que tienes que instalar para este proyecto:
+
+-------------------
+Instalar node server  
+
+Comprobar que tengas instalado node JS: npm -v
+
+npm install -g static-server
+
+ejecutar server: static-server
+
+----------------
+
+
+Instalar node-sass
+
+1. Instalar python desde la página oficial
+
+2. Ejecutar node-gyp
+
+3. Antes de instalar node-sass comprobar versión de node:
+
+Node 15	=> 5.0+
+Node 14	=> 4.14+
+Node 13	=> 4.13+
+Node 12	=> 4.12+
+Node 11	=> 4.10+
+Node 10	=> 4.9+
+Node 8	=> 4.5.3+
+Node <8	=> <5.0
+
+En nuestro caso con version node 6.12.2
+
+4. Ejecutar: npm install -g node-sass@4.8.3
+
+

@@ -1,16 +1,17 @@
-body {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: #34495e;
-  }
+// body {
+//     width: 100%;
+//     height: 100%;
+//     // position: fixed;
+//     background-color: #34495e;
+//   }
   
   .content {
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 160px;
+    // height: 160px;
     overflow:hidden;
     
     font-family: 'Lato', sans-serif;
@@ -133,6 +134,125 @@ body {
     66.64%,79.3% {transform:translate3d(0,-50%,0);}
     83.3%,95.96% {transform:translate3d(0,-25%,0);}
   }
+
+  @media screen and (max-width: 2560px){
+  }  
+
+  @media screen and (max-width: 1919px){
+  }
+
+  @media screen and (max-width: 1023px){
+  }
+
+  @media screen and (max-width: 767px){
+    .content {
+      width: 95%;  
+    }
+
+    .content__container__list__item, .content__container__text {
+      color: black;
+      height: 38px;  
+    }
+    
+    .content__container__text{
+      background-color: cadetblue;
+      color: white;
+      padding: 0px 5px;
+      font-size: 1.2em;
+    }
+
+    .content__container__list__item {
+      font-size: .8em;  
+    }
+
+    .content__container__list {
+      padding-left: 160px;
+    }
+
+    .content__container:after, .content__container:before {
+      font-size: 40px;
+      line-height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .content__container__list {
+      padding-left: 125px;
+    }
+
+    .content  {
+      font-size: 25px;
+    }
+  }  
+
+
+  @media screen and (max-width: 480px) {
+    
+
+    .content__container__list__item{
+        
+    }
+
+    .content__container__list{
+      padding-left: 85px;
+    }
+
+    .content{
+      font-size: 20px;
+    }
+
+    .content__container__text{
+      padding: 0 0;
+      font-size: 1.5em;
+    }
+
+    .content__container__list__item {
+      font-size: .8em;
+    }
+
+    .content__container {
+      padding: 0 20px;
+    }  
+
+  }
+
+  @media screen and (max-width: 320px){
+    .menu .content {
+      font-size: 20px;
+    } 
+    
+    .content__container__list__item {
+      font-size: 15px;
+    }
+
+    .content__container__list {
+      padding-left: 80px;
+    }
+
+    .content__container__text {
+      font-size: 1.3em;
+    }
+
+    .content {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    .menu .content {
+      font-size: 15px;
+    }
+
+    .content__container__list {
+      padding-left: 50px;
+    }
+
+    .content__container {
+      padding: 0 15px;
+    }
+
+
+  }  
   
   // 6 is the number of animation.
   // Here, there are 4 lines :
