@@ -125,7 +125,7 @@ $(window).scroll(function(event) {
 // Función para enviar email
 /*=======================================================================================================*/
 function sendEmailContact(){
-    const email = "niel.torres08@gmail.com";
+    const email = "ondev@nieltorres.com";
     var subject = "Hola Niel, ponte en contacto conmigo cuando puedas";
     var body = "";
     window.open('mailto:'+email+'?subject='+subject+'&body='+body+'');
