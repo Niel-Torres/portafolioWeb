@@ -574,7 +574,7 @@ body {
   .event-detail {
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: seashell;
     position: relative;
     padding: 20px;
     text-align: center;
@@ -1026,9 +1026,20 @@ body {
     .scrollToTop {
       right: 35px;
     }  
+  } 
+  
+  @media screen and (min-width: 768px) and (max-width: 970px){
+    .flexible-video {
+      padding-top: 76.54%;
+    }
+
+    .event .event-image {
+      width: 100%;
+    }
+
   }  
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
 
     h2 {
       font-size: 1.2em;
@@ -1077,9 +1088,13 @@ body {
       padding: 5px;
     }
 
+    .hero h1 {
+      margin-top: 40px;  
+    }
+    
     .hero-image {
       width: 70%;
-      left: 250px;
+      left: 255px;
     }
 
     .menu {
@@ -1194,34 +1209,29 @@ body {
       -webkit-transition: 0.29s cubic-bezier(0.52, 0.01, 0.16, 1);
       -moz-transition: 0.29s cubic-bezier(0.52, 0.01, 0.16, 1);
       transition: 0.29s cubic-bezier(0.52, 0.01, 0.16, 1);
-      }
+    }
       
-      .burger-button.on::before {
-        transform: rotate(45deg) translateY(0);
-        top: 45%;
-      }
-      
-      .burger-button.on::after {
-        transform: rotate(-45deg) translateY(0);
-      }
+    .burger-button.on::before {
+      transform: rotate(45deg) translateY(0);
+      top: 45%;
+    }
+    
+    .burger-button.on::after {
+      transform: rotate(-45deg) translateY(0);
+    }
 
-      .header.sticky {
-        background-color: #1b2127;
-        /* background-color: #ff5d4c; */
-      }
+    .header.sticky {
+      background-color: #1b2127;
+      /* background-color: #ff5d4c; */
+    }
 
-      .experience-container dd {
-        margin-right: 10px;
-      }
+    .experience-container dd {
+      margin-right: 10px;
+    }
 
   }
 
   @media screen and (max-width: 540px){
-    .social-link {
-      width: 40px;
-      height: 40px;
-      background-size: 100%;
-    }
 
     .contact {
       height: auto;
@@ -1230,11 +1240,22 @@ body {
       display: block;
     }
 
+    .hero-image {
+      width: 100%;
+      left: 0;
+    }
+
     .footer {
       display: block;
       text-align: center;
       border: 1px solid transparent;
       font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background-size: 100%;
     }
 
     .form-email button {
@@ -1256,11 +1277,23 @@ body {
     .map-footer, .email-footer {
       width: 100%;
       padding: 15px 0px 15px 0;
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     .form-email, .social {
       width: 100%;  
+    }
+
+    .form-email, .social {
+      font-size: .8em;
+    }
+
+    .map-email h6 {
+      font-size: .8em;
+    }
+
+    .mayus {
+      font-size: .8em;
     }
   }
 
@@ -1289,11 +1322,6 @@ body {
 
     .menu { 
       width: 100vw;
-    }
-
-    .hero-image {
-      width: 100%;
-      left: 0;
     }
 
     .tecnologia-text, .herramienta-text{
