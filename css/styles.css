@@ -419,7 +419,7 @@ body {
     /* margin-right
     margin-left 
     margin-top */
-    padding: 20px;
+    padding: 35px;
     background: white;
     display: flex;
     align-items: center;
@@ -816,6 +816,10 @@ body {
     width: 1px;
     height: 100%;
     background: #d8d8d8;
+  }
+
+  .tecnologias-herramientas{
+    margin: 20px;
   }
 
   .medium-semibold {
