@@ -46,15 +46,6 @@ function hideShowMenu(element){
     }
 }
 
-
-// if (ipad.matches) {
-//     // console.log("::TRUE::");
-//     burgerButton.addEventListener('click', hideShow);
-// } else {
-//     // console.log("::FALSE::");
-//     burgerButton.removeEventListener('click', hideShow);
-// }
-
 function hideShow(e) {
     e.preventDefault();
     hideShowMenu();
@@ -67,11 +58,9 @@ function hideShowMenu(element){
     if (burgerButton.classList.contains('on')) {
         burgerButton.classList.remove('on');
         menu.classList.remove('is_active');
-        // headerlogo.classList.add('hide');
     } else {
         burgerButton.classList.add('on');
         menu.classList.add('is_active');
-        // headerlogo.classList.remove('hide');
     }
 }
 
@@ -125,7 +114,7 @@ $(window).scroll(function(event) {
 // Función para enviar email
 /*=======================================================================================================*/
 function sendEmailContact(){
-    const email = "ondev@nieltorres.com";
+    const email = "niel.torres08@gmail.com";
     var subject = "Hola Niel, ponte en contacto conmigo cuando puedas";
     var body = "";
     window.open('mailto:'+email+'?subject='+subject+'&body='+body+'');
